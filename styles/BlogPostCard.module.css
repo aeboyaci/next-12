@@ -20,17 +20,3 @@
     -webkit-box-orient: vertical;
     display: -webkit-box;
 }
-.cardBtn {
-    background-color: #111927;
-    color: #9FEF00;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
-    transition: .25s;
-    display: flex;
-}
-.cardBtn:hover {
-    background-color: #9FEF00;
-    color: #111927;
-    transition: .25s;
-}

@@ -11,7 +11,7 @@ const BlogPostCard = ({ imageUrl, title, description, date }) => {
                         <p className={styles.cardText + " card-text"}>
                             {description}
                         </p>
-                        <button className={styles.cardBtn}>
+                        <button className={"customBtn"}>
                             Devamını oku
                         </button>
                     </div>

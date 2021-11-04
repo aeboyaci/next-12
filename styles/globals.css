@@ -30,3 +30,18 @@ a {
   background: #9FEF00;
   color: #111927;
 }
+
+.customBtn {
+  background-color: #111927;
+  color: #9FEF00;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: .25s;
+  display: flex;
+}
+.customBtn:hover {
+  background-color: #9FEF00;
+  color: #111927;
+  transition: .25s;
+}
