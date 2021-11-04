@@ -14,10 +14,10 @@ const BootstrapJsFileImport = dynamic(
 function MyApp({Component, pageProps}) {
     const [page, setPage] = useState("/");
 
+    console.log(Component);
     Router.events.on('routeChangeStart', (e) => {
         setPage(e);
         console.log(e);
-        console.log(Component);
     });
 
     return (
