@@ -1,0 +1,9 @@
+.height {
+    height: calc(100vh - 80px) !important;
+}
+
+@media screen and (max-width: 768px){
+    .height {
+        height: calc(100vh - 100px) !important;
+    }
+}
