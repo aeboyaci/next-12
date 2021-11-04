@@ -4,6 +4,7 @@ import React, {useState} from "react";
 import dynamic from 'next/dynamic';
 import {PageContext} from "../components/PageContext";
 import Navbar from "../components/Navbar";
+import {Router} from "next/router";
 
 const BootstrapJsFileImport = dynamic(
     () => import('bootstrap/dist/js/bootstrap.bundle'),
@@ -11,12 +12,14 @@ const BootstrapJsFileImport = dynamic(
 )
 
 function MyApp({Component, pageProps}) {
-    const [page, setPage] = useState("home");
+    const [page, setPage] = useState("/");
 
-    console.log(Component.name);
+    Router.events.on('routeChangeStart', (e) => {
+        setPage(e);
+    });
 
     return (
-        Component.name === "error" ? <Component {...pageProps} /> :
+        Component.name === "Error" ? <Component {...pageProps} /> :
             <PageContext.Provider value={[page, setPage]}>
                 <Navbar />
                 <Component {...pageProps}>

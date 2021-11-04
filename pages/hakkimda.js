@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from "next/head";
 
-const Hakkimda = () => {
+const About = () => {
     return (
         <div>
             <Head>
@@ -11,4 +11,4 @@ const Hakkimda = () => {
     );
 };
 
-export default Hakkimda;
+export default About;

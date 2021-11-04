@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from "next/head";
 
-const Iletisim = () => {
+const Contact = () => {
     return (
         <div>
             <Head>
@@ -11,4 +11,4 @@ const Iletisim = () => {
     );
 };
 
-export default Iletisim;
+export default Contact;

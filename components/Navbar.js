@@ -15,13 +15,13 @@ const Navbar = () => {
                     </div>
                     <div className={"col-md-4 col-sm-12 text-center mb-2 mb-md-0"}>
                         <Link href={"/"}>
-                            <a className={page === "home" ? styles.selected : ""} onClick={() => setPage("home")}>Ana Sayfa</a>
+                            <a className={page === "/" ? styles.selected : ""}>Ana Sayfa</a>
                         </Link>
                         <Link href={"/hakkimda"}>
-                            <a className={page === "about" ? styles.selected : ""} onClick={() => setPage("about")}>Hakkımda</a>
+                            <a className={page === "/hakkimda" ? styles.selected : ""}>Hakkımda</a>
                         </Link>
                         <Link href={"/iletisim"}>
-                            <a className={page === "contact" ? styles.selected : ""} onClick={() => setPage("contact")}>İletişim</a>
+                            <a className={page === "/iletisim" ? styles.selected : ""}>İletişim</a>
                         </Link>
                     </div>
                 </div>
