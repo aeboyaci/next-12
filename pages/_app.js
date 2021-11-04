@@ -16,6 +16,8 @@ function MyApp({Component, pageProps}) {
 
     Router.events.on('routeChangeStart', (e) => {
         setPage(e);
+        console.log(e);
+        console.log(Component);
     });
 
     return (
