@@ -14,20 +14,17 @@ const BootstrapJsFileImport = dynamic(
 function MyApp({Component, pageProps}) {
     const [page, setPage] = useState("/");
 
-    console.log(Component);
     Router.events.on('routeChangeStart', (e) => {
         setPage(e);
-        console.log(e);
     });
 
     return (
-        Component.name === "Error" ? <Component {...pageProps} /> :
-            <PageContext.Provider value={[page, setPage]}>
-                <Navbar />
-                <Component {...pageProps}>
-                    <BootstrapJsFileImport/>
-                </Component>
-            </PageContext.Provider>
+        <PageContext.Provider value={[page, setPage]}>
+            <Navbar />
+            <Component {...pageProps}>
+                <BootstrapJsFileImport/>
+            </Component>
+        </PageContext.Provider>
     )
 }
 
