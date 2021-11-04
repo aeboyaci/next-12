@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #1A2332;
+    height: 80px;
+    color: #C4C7D1;
+}
+@media screen and (max-width: 768px){
+    .navbar {
+        height: 100px;
+    }
+    .navbar div {
+        text-align: center !important;
+    }
+}
+.navbar h3 {
+    margin: 0;
+}
+.navbar a {
+    padding: 10px;
+    text-decoration: none;
+    color: #C4C7D1;
+}
+.navbar a:hover {
+    color: #83D31A;
+}
+.navbar .selected {
+    color: #9FEF00 !important;
+    background-color: #141D2B;
+}
